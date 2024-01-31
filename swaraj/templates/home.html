@@ -1,0 +1,11 @@
+{% extends 'main.html' %}
+{% block content %}
+<h1>Home Template</h1>
+<div>
+    {% for menu in menus %}
+    <div>
+        <h5>{{menu.id}} --<a href="/menus/{{menu.id}}">{{menu.name}}</a> </h5>
+    </div>
+    {% endfor %}
+</div>
+{% endblock content %}

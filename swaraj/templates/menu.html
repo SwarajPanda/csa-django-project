@@ -1,0 +1,8 @@
+{% extends 'main.html' %}
+{% block content %}
+<h1>Menu for: {{ menu.name }}</h1>
+<h2>Menu:</h2>
+<p>
+    {{ menu.description | linebreaks }}
+</p>
+{% endblock content %}
